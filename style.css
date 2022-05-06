@@ -1,0 +1,314 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+    display: block;
+}
+
+body {
+    line-height: 1;
+}
+
+ol,
+ul {
+    list-style: none;
+}
+
+blockquote,
+q {
+    quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+    content: '';
+    content: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+.container {
+    width: 940px;
+    margin: 0 auto;
+}
+
+.header {
+    /* border: 1px solid #000; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header .logo {
+    width: 200px;
+}
+
+.header .navbar {
+    display: flex;
+    justify-content: space-between;
+    padding: 40px 0px;
+}
+
+.header .navbar li {
+    padding-left: 60px;
+}
+
+.header .navbar a {
+    font-size: 16px;
+    text-decoration: none;
+    color: #3F5D45;
+}
+
+.header .navbar .icon_shopping {
+    padding-left: 72px;
+}
+
+.content {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 60px;
+}
+
+.content .sidebar {
+    padding-right: 20px;
+}
+
+.content .catalogue h4 {
+    font-size: 24px;
+    padding: 16px 102px;
+    background: #3F5D45;
+    color: white;
+    font-weight: 600;
+}
+
+.content .sidebar .catalogue li {
+    font-size: 24px;
+    text-align: center;
+    padding: 16px 0px;
+    border: 1px solid #EAF0ED;
+}
+
+.content .sidebar .catalogue .clicked {
+    background: #EAF0ED;
+}
+
+.content .sidebar li a {
+    color: #3F5D45;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.showlist {
+    display: flex;
+    flex-direction: column;
+    width: 620px;
+}
+
+.showlist .items {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.showlist .items .item {
+    margin-bottom: 20px;
+    position: relative;
+}
+
+.showlist .items .item .icon_fav {
+    position: absolute;
+    top: 20px;
+    right: 22px;
+}
+
+.showlist .items .item .label {
+    position: absolute;
+    top: 0px;
+    font-size: 16px;
+    writing-mode: vertical-lr;
+    color: #EAF0ED;
+    background: #3F5D45;
+    padding: 10px;
+    margin-left: 20px;
+}
+
+.showlist .items .item .photo {
+    width: 300px;
+    margin-bottom: -3px;
+}
+
+.showlist .items .item .text {
+    font-size: 20px;
+    color: #3F5D45;
+    border: 1px solid #EAF0ED;
+    display: flex;
+    align-items: center;
+}
+
+.showlist .items .item .text .name {
+    padding: 14px 33px;
+}
+
+.showlist .items .item .text .price {
+    padding: 14px 25px;
+    border-left: 1px solid #EAF0ED;
+}
+
+.showlist .items .item .btn {
+    background: #EAF0ED;
+    padding: 16px 90px;
+}
+
+.showlist .items .item .btn a {
+    font-size: 24px;
+    text-decoration: none;
+    color: #3F5D45;
+}
+
+
+.page {
+    display: flex;
+    justify-content: end;
+    margin-bottom: 60px;
+}
+
+.page .pagination {
+    display: flex;
+    font-size: 20px;
+}
+
+.page .pagination li {
+    width: 60px;
+    height: 60px;
+    border: 1px solid #EAF0ED;
+    text-align: center;
+}
+
+.page .pagination li a {
+    display: block;
+    color: #3F5D45;
+    text-decoration: none;
+    margin-top: 20px;
+
+}
+
+.page .pagination .page_clicked {
+    background: #3F5D45;
+}
+
+.page .pagination .page_clicked a {
+    color: #EAF0ED;
+}
+
+.page .pagination .i-backward,
+.i-forward {
+    padding: 18px;
+    border: 1px solid #EAF0ED;
+}
